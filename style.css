@@ -3,4 +3,11 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-top: 150px;
+}
+
+.contagemRegressiva {
+    display: flex;
+    width: 30vw;
+    justify-content: space-between;
 }
