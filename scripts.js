@@ -1,11 +1,13 @@
-const dataPrevista = '18 feb 2023';
 
 const diasCount = document.getElementById('dias');
 const horasCount = document.getElementById('horas');
 const minutosCount = document.getElementById('minutos');
 const segundosCount = document.getElementById('segundos');
 
-function contador() {
+function iniciarCont() {
+    const dataPrevista = document.getElementById('date').value;
+    console.log(dataPrevista);
+
     const dataSeleceionada = new Date(dataPrevista);
     const dataAtual = new Date();
 
@@ -21,10 +23,11 @@ function contador() {
     minutosCount.innerHTML = minutos;
     segundosCount.innerHTML = segundos;
 
+
 }
 
-contador();
-setInterval(contador, 1000);
+iniciarCont();
+setInterval(iniciarCont, 1000);
 
 
 /*var data = new Date('dias');
